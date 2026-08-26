@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrastar Frases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Jogo de Arrastar Frases</h1>
+        
+        <div class="game-area">
+            <!-- Lado Esquerdo -->
+            <div class="side left-side">
+                <h2>Lado Esquerdo</h2>
+                <div class="drop-zone" id="leftZone">
+                    <p class="placeholder">Arraste aqui →</p>
+                </div>
+            </div>
+
+            <!-- Área Central com Frases -->
+            <div class="center">
+                <div class="phrases-container">
+                    <div class="phrase" draggable="true" id="phrase1">
+                        ✨ JavaScript é incrível!
+                    </div>
+                    <div class="phrase" draggable="true" id="phrase2">
+                        🚀 Desenvolvimento web é divertido
+                    </div>
+                    <div class="phrase" draggable="true" id="phrase3">
+                        💡 Criatividade em código
+                    </div>
+                    <div class="phrase" draggable="true" id="phrase4">
+                        🎨 Design responsivo
+                    </div>
+                    <div class="phrase" draggable="true" id="phrase5">
+                        ⚡ Velocidade e performance
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lado Direito -->
+            <div class="side right-side">
+                <h2>Lado Direito</h2>
+                <div class="drop-zone" id="rightZone">
+                    <p class="placeholder">← Arraste aqui</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão Reset -->
+        <div class="controls">
+            <button id="resetBtn" class="btn">🔄 Resetar</button>
+        </div>
+
+        <!-- Contador -->
+        <div class="stats">
+            <p>Esquerda: <span id="leftCount">0</span> | Direita: <span id="rightCount">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
